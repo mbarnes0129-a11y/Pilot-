@@ -1,38 +1,20 @@
-DigiCoach 7-Stage — FIX v2 (Battles + Store + Uploads)
-======================================================
+DigiCoach 7‑Stage — FIX (Battles + Store + Uploads)
+===================================================
 
-✅ What’s fixed
-- Battles now run (enemy names, moves, HP bars).
-- Store works (purchases apply, items usable in battle, items consume a turn).
-- Stage image uploads work on iPhone (tap 🥚→👑).
-- Bypass Cache button clears old files after updates.
-- Assets versioned (?v=fix-v2) so you always load new code.
+This build directly targets the issues you hit:
+- **Battle not working** → stable listeners, modal fallback, and fresh cache.
+- **Image upload not working** → guaranteed user‑gesture file pickers per stage (iOS‑friendly).
+- **Item shop not working** → store button wired, purchase flow confirms, inventory updates.
 
-🕹️ How to install
-1. Upload these files to your repo **root** (replace old ones):
-   - index.html
-   - style.css
-   - app.js
-   - manifest.json
-   - service-worker.js
-   - README.txt
+New utility:
+- **♻️ Bypass Cache** button (header) — unregisters the service worker and reloads so you always get the latest files after a GitHub Pages update.
 
-2. In GitHub → Settings → Pages → choose **main / root**.
+How to use
+1) Upload these files to your **repo root** and enable GitHub Pages.
+2) Open your site → tap **♻️ Bypass Cache** once after each update.
+3) Tap a **stage button** (🥚→👑) to pick an image, then choose a file. You’ll see “Stage N image saved.”
+4) Add/check off quests to earn coins and XP.
+5) Open **🏪 Store**, buy an item, and check your inventory in the battle screen dropdown.
+6) Start a battle — use **Move 1–4** or **🎒 Use Item** (items consume a turn).
 
-3. Open your Pages site, tap **♻️ Bypass Cache** once.
-
-4. On iPhone → Safari → Share → Add to Home Screen.
-
-🧪 Self-test mode
-Add `?autotest=1` to your site URL. It will:
-- Give coins
-- Auto-open store
-- Buy an item
-- Start a battle
-- Perform 2 moves
-
-Example:
-https://yourusername.github.io/your-repo/?autotest=1
-
----
-Built 2025
+— Built 2025-08-26
