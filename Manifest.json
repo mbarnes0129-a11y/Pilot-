@@ -1,9 +1,0 @@
-{
-  "name": "DigiCoach 7-Stage — FIX v2",
-  "short_name": "DigiCoach",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#eef2f7",
-  "theme_color": "#dde7f2",
-  "icons": []
-}
